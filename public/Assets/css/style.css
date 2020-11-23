@@ -1,0 +1,164 @@
+/* Header stylesheet */
+.header{
+    text-align: center;
+    padding: 18px 0;
+    box-shadow: 2px 2px 12px 2px #00000052;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.header-title{
+    margin: 0;
+}
+
+/* Grid stylesheet */
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100Vh;
+}
+.aside-wrapper{
+    padding: 10px;
+    box-shadow: 2px 6px 6px 2px rgb(212 214 243);
+    height: calc(100vh - 60px);
+    position: sticky;
+    margin-top: 56px;
+    z-index: 5;
+}
+.aside-wrapper2{
+    padding: 10px;
+    box-shadow: -2px 6px 6px 2px rgb(212 214 243 / 0.28);
+    height: calc(100vh - 60px);
+    position: sticky;
+    margin-top: 56px;
+    z-index: 5;
+}
+.property-box{
+    padding-top: 10px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.property-box-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.screen-canvas{
+    background: #f8f5f5;
+    height: calc(100vh - 60px);
+    z-index: 0;
+    margin-top: 56px;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+/* Shapes stylesheet */
+.shape-box-list{
+    padding-left: 10px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 0px;
+}
+.shape-box-shape{
+    max-width: 26px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+
+/* Layers stylesheet */
+.layer-group{
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+}
+.layer-list{
+    padding: 4px 0;
+    margin-bottom: 6px;
+    display: flex;
+}
+.layer-icon{
+    margin-right: 16px;
+    width: 14px;
+    height: 14px;
+}
+
+
+/* Colors stylesheet */
+.colors-box-shape{
+    width: 36px;
+    height: 24px;
+    text-align: center;
+    margin-bottom: 18px;
+    display: block;
+    border: 1px solid #eaeaea;
+}
+.colors-box-list{
+    padding-left: 0px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 8px;
+}
+
+.blue-color{
+    background: blue
+}
+
+.yellow-color{
+    background: yellow;
+}
+
+.green-color{
+    background: green;
+}
+
+.red-color{
+    background: red;
+}
+
+.purple-color{
+    background: purple;
+}
+
+.pink-color{
+    background: #ff7b92;
+}
+
+.black-color{
+    background: Black;
+}
+
+.orange-color{
+    background: orange;
+}
+
+.ml-2{
+    margin-left: 0.5rem;
+}
+
+
+/* Numbers stylesheet */
+.numbers{
+    margin-bottom: 10px;
+}
+.numbers label{
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.numbers input{
+    width: 80%;
+    padding: 6px 8px;
+    border: 1px solid #dfd7d7;
+}
