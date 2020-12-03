@@ -173,7 +173,7 @@ export default function Canvas() {
 
             <Stage width={window.innerWidth} height={window.innerHeight}>
                 <Layer>
-                    {
+                    {allShapes && 
                         allShapes.map((shape, index) => (
                             drawShape(shape)
 

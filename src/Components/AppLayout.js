@@ -6,25 +6,7 @@ import Header from './Header';
 
 
 export default function AppLayout() {
-    const database = {
-        shapes: [],
-        layers: [],
-        properties: {
-            width:'100', 
-            height:'100', 
-            fill:'#1B61E4',
-            radius:'75',
-            opacity:'1',
-            createdAt: new Date(),
-            stroke:'#000000',
-            strokeWidth:'0'
-        }
-            
-    };
-    useEffect(()=>{
-        localStorage.setItem('database', JSON.stringify(database));
-    });
-
+    
     return (
         <div>
             <Header />

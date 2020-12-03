@@ -16,6 +16,25 @@ var ID = function () {
     return '_' + Math.random().toString(36).substr(2, 9);
 };
 
+const database = {
+    shapes: [],
+    layers: [],
+    properties: {
+        width:'100', 
+        height:'100', 
+        fill:'#1B61E4',
+        radius:'75',
+        opacity:'1',
+        createdAt: new Date(),
+        stroke:'#000000',
+        strokeWidth:'0'
+    }
+        
+};
+
+if(!localStorage.database){
+    localStorage.setItem('database', JSON.stringify(database));
+}
 
 
 function getShape() {
@@ -35,6 +54,7 @@ function getShape() {
 function createShape(name, layer) {
     return dispatch => {
         const create_shape = JSON.parse(localStorage.getItem('database'));
+        // const create_shape = [];
         let something = ID()
         let newShape = {
             id: something,
@@ -105,10 +125,8 @@ function getSingleShape(shape) {
 function editShape(properties) {
     return dispatch => {
         const edit_shape = JSON.parse(localStorage.getItem('database'));
-        let found = false;
         edit_shape.shapes.forEach(shape => {
             if (shape.id === properties.id) {
-                found = true;
                 shape.properties = {
                     width: properties.width ? properties.width : shape.properties.width,
                     height: properties.height ? properties.height : shape.properties.height,
